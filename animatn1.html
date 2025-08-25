@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bt{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .btn{
+            font-size:2rem ;
+            padding: 0.5em 1em;
+            font-weight: 700;
+            background-color: rgba(59, 172, 243, 0.878);
+            color: rgb(11, 22, 242);
+            border: 5px solid blue;
+            border-radius: 5px;
+            transition: all 0.3s ease 0s; /* property duration timing-funtion delay  */
+            /* ease and 0s delay are default values so u can write this only - transition: all 0.3s ;  */
+        }
+    
+        .btn:hover{
+            transform: translateY(-10px);
+            /* scale: 1.5; */
+            color:white;
+            background-color:blue;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="bt">
+
+        <button class="btn">Learn more</button>
+    </div>
+</body>
+</html>

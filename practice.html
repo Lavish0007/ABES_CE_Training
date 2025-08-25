@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[ PRACTICE ]</title>
+    <style>
+        .div {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @keyframes slide {
+            from {
+                transform: translateX(-300px);
+                background-color: rgb(244, 231, 215);
+                color: rgb(0, 255, 42);
+            }
+            to {
+                transform: translateX(0px);
+                
+            }
+        }
+
+        .btn {
+            animation: slide 1.5s ease-in;
+            animation-iteration-count: infinite;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            background-color: rgb(6, 222, 255);
+            color: blue;
+            font-size: 2rem;
+            font-weight: 700;
+        }
+
+        /* Optional: Re-trigger on hover */
+        .btn:hover {
+            animation: slide 1.5s ease-in;
+        }
+    </style>
+</head>
+<body>
+    <div class="div">
+        <button class="btn">REGISTER</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation 2</title>
+    <style>
+        .bt{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .btn{
+            font-size:2rem ;
+            padding: 0.5em 1em;
+            font-weight: 700;
+            background-color: rgba(59, 172, 243, 0.878);
+            color: rgb(11, 22, 242);
+            border: 5px solid blue;
+            border-radius: 5px;
+        }
+        @keyframes sliding {
+            from{
+                transform: translateX(-300px);
+
+            }
+            to{
+                transform: translateX(0px);
+
+            }
+        }
+        .head{
+            animation: sliding 1s ease-in 0s 1 ;
+            color: aqua;
+            text-shadow:  2px 2px 3px rgb(1, 1, 1);
+            
+        }
+        .head:hover{
+            color: yellow;
+        }
+    
+        
+    </style>
+</head>
+<body>
+    <div class="bt">
+
+       <h1 class="head">HELLO WORLD!</h1>
+    </div>
+</body>
+</html>
