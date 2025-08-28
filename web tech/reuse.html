@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Alignment</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .form-group {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 15px;
+    }
+
+    
+
+    .form-group input, 
+    .form-group select {
+      
+      padding: 5px;
+    }
+
+    .branch-options {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr); 
+      gap: 5px 20px;
+    }
+
+    .buttons {
+      margin-top: 15px;
+    }
+  </style>
+</head>
+<body>
+  <h2 style="text-align:center;">ABES ENGINEERING COLLEGE</h2>
+  
+  <form>
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" id="name" placeholder="Your Name">
+    </div>
+
+    <div class="form-group">
+      <label for="age">Age:</label>
+      <input type="text" id="age" placeholder="Your Age">
+    </div>
+
+    <div class="form-group">
+      <label>Branch:</label>
+      <div class="branch-options">
+        <label><input type="radio" name="branch"> IT</label>
+        <label><input type="radio" name="branch"> CE</label>
+        <label><input type="radio" name="branch"> CSE</label>
+        <label><input type="radio" name="branch"> CSE DS</label>
+        <label><input type="radio" name="branch"> AIML</label>
+        <label><input type="radio" name="branch"> EN</label>
+        <label><input type="radio" name="branch"> ME</label>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="phone">Phone:</label>
+      <input type="text" id="phone" placeholder="+91">
+    </div>
+
+    <div class="form-group">
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob">
+    </div>
+
+    <div class="buttons form-group">
+      <button type="submit">SUBMIT</button>
+      <button type="reset">RESET</button>
+    </div>
+  </form>
+</body>
+</html>
