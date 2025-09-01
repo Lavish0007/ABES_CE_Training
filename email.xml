@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<email>
+    <from>lavish.master@example.com</from>
+    <to>recipient@example.com</to>
+    <cc>team@example.com</cc>
+    <subject>Meeting Reminder</subject>
+    <body>
+        Dear Team,
+
+        This is a reminder for our project review meeting scheduled for 
+        31st August 2025 at 10:00 AM. Please be prepared with your updates.
+
+        Regards,
+        Master Lavish
+    </body>
+</email>
